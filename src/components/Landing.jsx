@@ -8,6 +8,7 @@ import landingImg from "./imgs/content.jfif";
 // styles
 import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import "./css/Carousel.css";
+import { Link } from "react-router-dom";
 
 function Carousel() {
   return (
@@ -24,9 +25,9 @@ function Carousel() {
             season sale <br />
             2022!
           </p>
-          <a href="/product-category">
+          <Link to="/product-category">
             <button className="btn btn-dark">Shop Now</button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="scroll-down">

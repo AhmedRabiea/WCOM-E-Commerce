@@ -9,10 +9,10 @@ function Sidebar() {
       <Link className="active" to="/product-category">
         Home <FontAwesomeIcon icon={faHouse} />
       </Link>
-      <Link to="content">Office</Link>
-      <Link to="#">Sofa Furniture</Link>
-      <Link to="#">Electronics</Link>
-      <Link to="#">Smart Home</Link>
+      <Link to="office">Office</Link>
+      <Link to="sofa-furniture">Sofa Furniture</Link>
+      <Link to="electronics">Electronics</Link>
+      <Link to="smart-home">Smart Home</Link>
     </div>
   );
 }

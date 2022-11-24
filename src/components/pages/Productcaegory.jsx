@@ -4,7 +4,12 @@ import { Route, Routes } from "react-router-dom";
 
 // styles
 import "../css/Productcategory.css";
-import Homedesign from "./Homedesign";
+// Routes
+import Sofafurniture from "./Sofafurniture";
+import Electronics from "./Electronics";
+import Smarthome from "./Smarthome";
+import Office from "./Office";
+import Maincontent from "./Maincontent";
 
 function Productcaegory() {
   return (
@@ -13,9 +18,11 @@ function Productcaegory() {
         <Sidebar />
         <div className="m-2">
           <Routes>
-            <Route path="/product-category">
-              <Route path="content" element={<Homedesign />} />
-            </Route>
+            <Route path="/" element={<Maincontent />} />
+            <Route path="office" element={<Office />} />
+            <Route path="sofa-furniture" element={<Sofafurniture />} />
+            <Route path="electronics" element={<Electronics />} />
+            <Route path="smart-home" element={<Smarthome />} />
           </Routes>
         </div>
       </div>

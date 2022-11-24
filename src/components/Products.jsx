@@ -19,14 +19,14 @@ import Woodenbowls from "./imgs/woodenbowls.jfif";
 
 function Products() {
   const Listitems = [
-    { img: Fiberglass, desc: "Fiber Glass Chair", price: 20 },
-    { img: Bluechair, desc: "Blue Chair", price: 20 },
-    { img: Bumperchair, desc: "Bumper Chair", price: 20 },
-    { img: Table, desc: "Wooden Table", price: 20 },
-    { img: Wallclock, desc: "Wooden Wall Clock", price: 20 },
-    { img: Sleeper, desc: "Sleeper Sofa", price: 20 },
-    { img: Beanbag, desc: "Bean Bag", price: 20 },
-    { img: Woodenbowls, desc: "Wooden Bowls", price: 20 },
+    { id: 1, img: Fiberglass, desc: "Fiber Glass Chair", price: 20 },
+    { id: 2, img: Bluechair, desc: "Blue Chair", price: 20 },
+    { id: 3, img: Bumperchair, desc: "Bumper Chair", price: 20 },
+    { id: 4, img: Table, desc: "Wooden Table", price: 20 },
+    { id: 5, img: Wallclock, desc: "Wooden Wall Clock", price: 20 },
+    { id: 6, img: Sleeper, desc: "Sleeper Sofa", price: 20 },
+    { id: 7, img: Beanbag, desc: "Bean Bag", price: 20 },
+    { id: 8, img: Woodenbowls, desc: "Wooden Bowls", price: 20 },
   ];
   return (
     <div className="featured-products">
@@ -35,6 +35,7 @@ function Products() {
       <div className="Product-Items container-fluid">
         {Listitems.map((product) => (
           <Productitems
+            products={Listitems}
             image={product.img}
             description={product.desc}
             price={product.price}

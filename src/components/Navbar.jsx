@@ -26,10 +26,10 @@ function Navbar(props) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-category">
-            <li class="nav-item">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="nav-category">
+            <li className="nav-item">
               <Link
-                class="nav-link active"
+                className="nav-link active"
                 aria-current="page"
                 to="/product-category"
               >
