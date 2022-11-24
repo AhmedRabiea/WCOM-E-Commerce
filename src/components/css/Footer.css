@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 3%;
+}
+.footer .footerContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerContent .text {
+  color: #000;
+  padding-top: 50px;
+}
+.footer h2 {
+  color: #000;
+}
+.footer h2 span {
+  color: #ef534f;
+}
+.footer h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  width: 30%;
+  border: 1px solid #c5c5ca;
+}
+.footer h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  width: 30%;
+  border: 1px solid #c5c5ca;
+}
+.footerContent .text p {
+  color: #89898b;
+}

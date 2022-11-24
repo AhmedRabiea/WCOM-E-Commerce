@@ -1,0 +1,24 @@
+.navbar-brand {
+  color: #ef534f;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.navbar-brand span {
+  color: #000000;
+}
+.navbar-brand:hover {
+  color: #ef534f;
+}
+
+#nav-input {
+  width: 40rem;
+  border-color: #000000;
+}
+#nav-category {
+  height: 100%;
+  background-color: #000000;
+  border-radius: 5px;
+}
+#nav-category a {
+  color: #fff;
+}
