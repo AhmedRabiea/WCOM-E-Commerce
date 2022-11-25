@@ -60,7 +60,7 @@ function Navbar(props) {
               <Link className="nav-link position-relative" to="/cart">
                 <FontAwesomeIcon icon={faShoppingCart} /> Cart
                 <span className="position-absolute top-1 start-100 translate-middle badge rounded-circle bg-warning">
-                  3
+                  {props.itemsCount}
                 </span>
               </Link>
             </li>

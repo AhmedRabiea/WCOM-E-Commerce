@@ -9,13 +9,13 @@ import Cart from "./components/pages/Cart";
 
 function App() {
   const Products = [
-    { id: 1, name: "Blue Sofa Chair", price: 50 },
-    { id: 2, name: "Wooden Clock ", price: 20 },
-    { id: 3, name: "Table", price: 80 },
+    { id: 1, name: "Blue Sofa Chair", count: 2, price: 50 },
+    { id: 2, name: "Wooden Clock ", count: 1, price: 20 },
+    { id: 3, name: "Table", count: 3, price: 80 },
   ];
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar itemsCount={Products.filter((p) => p.id > 0).length} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product-category/*" element={<Productcaegory />} />

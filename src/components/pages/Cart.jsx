@@ -9,11 +9,17 @@ function Cart(props) {
           <th>ID</th>
           <th>Name</th>
           <th>Price</th>
+          <th>Count</th>
         </tr>
         <tbody>
           {" "}
           {props.products.map((p) => (
-            <Cartelements id={p.id} name={p.name} price={p.price} />
+            <Cartelements
+              id={p.id}
+              name={p.name}
+              price={p.price}
+              countItems={p.count}
+            />
           ))}
         </tbody>
       </table>

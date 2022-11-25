@@ -6,6 +6,11 @@ function Cartelements(props) {
       <td>{props.id}</td>
       <td>{props.name}</td>
       <td>{props.price}$</td>
+      <td>{props.countItems}</td>
+      <td>
+        <button className="btn btn-warning m-1">+</button>
+        <button className="btn btn-warning">-</button>
+      </td>
     </tr>
   );
 }
