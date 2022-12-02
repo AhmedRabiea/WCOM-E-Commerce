@@ -1,6 +1,11 @@
 import React from "react";
 
 function Productitems(props) {
+
+  const handleAddToCart = () => {
+    
+
+  }
   return (
     <div className="card">
       <img
@@ -13,7 +18,7 @@ function Productitems(props) {
         <p className="card-text">
           <strong>{props.price}$</strong>
         </p>
-        <button className="btn btn-outline-dark">Add To Cart</button>
+        <button className="btn btn-outline-dark" onClick={handleAddToCart}>Add To Cart</button>
       </div>
     </div>
   );

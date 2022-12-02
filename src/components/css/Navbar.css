@@ -3,6 +3,10 @@
   font-weight: bolder;
   font-size: 25px;
 }
+.navbar-brand img {
+  width: 30px;
+  height: 20px;
+}
 .navbar-brand span {
   color: #000000;
 }

@@ -35,3 +35,11 @@
 .footerContent .text p {
   color: #89898b;
 }
+@media screen and (max-width: 420px) {
+  .footer {
+    padding-top: 5%;
+  }
+  .footer .footerContent {
+    grid-template-columns: 1fr;
+  }
+}
