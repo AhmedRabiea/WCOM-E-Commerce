@@ -69,3 +69,7 @@ img {
     display: none;
   }
 }
+
+.card:hover {
+  box-shadow: 5px 5px 5px;
+}

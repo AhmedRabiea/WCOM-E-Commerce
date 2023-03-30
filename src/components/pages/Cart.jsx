@@ -2,6 +2,9 @@ import React from "react";
 import Cartelements from "./Cartelements";
 
 function Cart(props) {
+  const handleIncrement = () => {
+    props.products.count += 1;
+  };
   return (
     <div className="container-fluid">
       <table className="table">
@@ -16,9 +19,10 @@ function Cart(props) {
           {props.products.map((p) => (
             <Cartelements
               id={p.id}
-              name={p.name}
+              name={p.desc}
               price={p.price}
               countItems={p.count}
+              handleIncrement={handleIncrement}
             />
           ))}
         </tbody>

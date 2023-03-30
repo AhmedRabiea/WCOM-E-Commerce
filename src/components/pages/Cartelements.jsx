@@ -1,6 +1,7 @@
 import React from "react";
 
 function Cartelements(props) {
+  const handleIncrement = () => {};
   return (
     <tr>
       <td>{props.id}</td>
@@ -8,7 +9,9 @@ function Cartelements(props) {
       <td>{props.price}$</td>
       <td>{props.countItems}</td>
       <td>
-        <button className="btn btn-warning m-1">+</button>
+        <button className="btn btn-warning m-1" onClick={handleIncrement}>
+          +
+        </button>
         <button className="btn btn-warning">-</button>
       </td>
     </tr>
