@@ -37,9 +37,6 @@ function App() {
     }
   };
 
-  const handleIncrement = () => {
-    [...emptyArray];
-  };
   return (
     <React.Fragment>
       <Navbar itemsCount={emptyArray.length} />
